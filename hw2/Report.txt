@@ -1,0 +1,6 @@
+I arbitrarily chose 1,231,323 as the test case, program 1 ran the quickest but that was largely due to the data set size. Also noticed that thread 0 always finneshed first followed by thread 4.
+
+Program 1 count:
+10,000
+Program 2&3 count:
+1,231,323

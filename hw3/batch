@@ -1,0 +1,3 @@
+#!/bin/sh
+export OMP_NUM_THREADS=$1
+./heat $1 5000 5000 40 1 1000 heaterlist.txt outfile.csv

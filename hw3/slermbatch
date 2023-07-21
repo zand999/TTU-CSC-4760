@@ -1,0 +1,40 @@
+#!/bin/bash
+sbatch --job-name="az-4/4" --output="az1-4_4" --nodes=1 --tasks-per-node=4 --time=120 ./batch 4
+sbatch --job-name="az-4/4" --output="az2-4_4" --nodes=1 --tasks-per-node=4 --time=120 ./batch 4
+
+sbatch --job-name="az-4/8" --output="az1-4_8" --nodes=1 --tasks-per-node=8 --time=120 ./batch 4
+sbatch --job-name="az-4/8" --output="az2-4_8" --nodes=1 --tasks-per-node=8 --time=120 ./batch 4
+
+sbatch --job-name="az-4/16" --output="az1-4_16" --nodes=1 --tasks-per-node=16 --time=120 ./batch 4
+sbatch --job-name="az-4/16" --output="az2-4_16" --nodes=1 --tasks-per-node=16 --time=120 ./batch 4
+
+
+sbatch --job-name="az-8/4" --output="az1-8_4" --nodes=1 --tasks-per-node=4 --time=120 ./batch 8
+sbatch --job-name="az-8/4" --output="az2-8_4" --nodes=1 --tasks-per-node=4 --time=120 ./batch 8
+
+sbatch --job-name="az-8/8" --output="az1-8_8" --nodes=1 --tasks-per-node=8 --time=120 ./batch 8
+sbatch --job-name="az-8/8" --output="az2-8_8" --nodes=1 --tasks-per-node=8 --time=120 ./batch 8
+
+sbatch --job-name="az-8/16" --output="az1-8_16" --nodes=1 --tasks-per-node=16 --time=120 ./batch 8
+sbatch --job-name="az-8/16" --output="az2-8_16" --nodes=1 --tasks-per-node=16 --time=120 ./batch 8
+
+
+sbatch --job-name="az-16/4" --output="az1-16_4" --nodes=1 --tasks-per-node=4 --time=120 ./batch 16
+sbatch --job-name="az-16/4" --output="az2-16_4" --nodes=1 --tasks-per-node=4 --time=120 ./batch 16
+
+sbatch --job-name="az-16/8" --output="az1-16_8" --nodes=1 --tasks-per-node=8 --time=120 ./batch 16
+sbatch --job-name="az-16/8" --output="az2-16_8" --nodes=1 --tasks-per-node=8 --time=120 ./batch 16
+
+sbatch --job-name="az-16/16" --output="az1-16_16" --nodes=1 --tasks-per-node=16 --time=120 ./batch 16
+sbatch --job-name="az-16/16" --output="az2-16_16" --nodes=1 --tasks-per-node=16 --time=120 ./batch 16
+
+
+sbatch --job-name="az-32/4" --output="az1-32_4" --nodes=1 --tasks-per-node=4 --time=120 ./batch 32
+sbatch --job-name="az-32/4" --output="az2-32_4" --nodes=1 --tasks-per-node=4 --time=120 ./batch 32
+
+sbatch --job-name="az-32/8" --output="az1-32_8" --nodes=1 --tasks-per-node=8 --time=120 ./batch 32
+sbatch --job-name="az-32/8" --output="az2-32_8" --nodes=1 --tasks-per-node=8 --time=120 ./batch 32
+
+sbatch --job-name="az-32/16" --output="az1-32_16" --nodes=1 --tasks-per-node=16 --time=120 ./batch 32
+sbatch --job-name="az-32/16" --output="az2-32_16" --nodes=1 --tasks-per-node=16 --time=120 ./batch 32
+

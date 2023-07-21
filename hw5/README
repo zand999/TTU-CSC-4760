@@ -1,0 +1,6 @@
+COMPILE:
+mpicc -g -Wall -o 2dheat 2dheat.c
+RUN:
+mpiexec -n <processcount> ./2dheat <ARGS proveded in assignment>
+EXAMP:
+mpiexec -n 8 ./2dheat 17 17 1.05 90 5 temps.txt out.csv

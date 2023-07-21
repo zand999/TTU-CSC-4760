@@ -1,0 +1,18 @@
+#!/bin/bash
+sbatch --job-name="az1-1" --output="az1-1" --nodes=1 --tasks-per-node=1 --time=120 ./batch 1
+sbatch --job-name="az2-1" --output="az2-1" --nodes=1 --tasks-per-node=1 --time=120 ./batch 1
+
+sbatch --job-name="az1-1" --output="az1-2" --nodes=1 --tasks-per-node=2 --time=120 ./batch 2
+sbatch --job-name="az2-1" --output="az2-2" --nodes=1 --tasks-per-node=2 --time=120 ./batch 2
+
+sbatch --job-name="az1-4" --output="az1-4" --nodes=1 --tasks-per-node=4 --time=120 ./batch 4
+sbatch --job-name="az2-4" --output="az2-4" --nodes=1 --tasks-per-node=4 --time=120 ./batch 4
+
+sbatch --job-name="az1-8" --output="az1-8" --nodes=1 --tasks-per-node=8 --time=120 ./batch 8
+sbatch --job-name="az2-8" --output="az2-8" --nodes=1 --tasks-per-node=8 --time=120 ./batch 8
+
+sbatch --job-name="az1-16" --output="az1-16" --nodes=2 --tasks-per-node=8 --time=120 ./batch 16
+sbatch --job-name="az2-16" --output="az2-16" --nodes=2 --tasks-per-node=8 --time=120 ./batch 16
+
+sbatch --job-name="az1-28" --output="az1-28" --nodes=2 --tasks-per-node=14 --time=120 ./batch 28
+sbatch --job-name="az2-28" --output="az2-28" --nodes=2 --tasks-per-node=14 --time=120 ./batch 28

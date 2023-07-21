@@ -1,0 +1,2 @@
+#!/bin/sh
+mpiexec -n $1 ./2dheat 3000 3000 1.05 30 1000 temps.txt out.csv
